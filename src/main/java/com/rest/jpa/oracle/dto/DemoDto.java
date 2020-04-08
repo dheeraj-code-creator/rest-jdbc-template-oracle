@@ -4,13 +4,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DemoDto {
 	
-    @JsonProperty(value = "idaa")
+    @JsonProperty(value = "id")
 	private int id;
     
-    @JsonProperty(value = "nameaa")
+    @JsonProperty(value = "name")
 	private String name;
     
-    @JsonProperty(value = "monthlySalryaa")
+    @JsonProperty(value = "monthlySalry")
 	private int monthlySalry;
 
 	public int getMonthlySalry() {

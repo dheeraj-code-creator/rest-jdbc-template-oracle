@@ -2,32 +2,47 @@ package com.rest.jpa.oracle.entity;
 
 public class Demo {
 
-	private int id;
-	private String name;
-	private int monthlySalry;
-
-	public int getMonthlySalry() {
-		return monthlySalry;
+	private int userId;
+	private String userName;
+	private int userMonthlySalry;
+	private int userAnnualSalry;
+	private String userAddress;
+	private String userCompany;
+	
+	public int getUserAnnualSalry() {
+		return userAnnualSalry;
 	}
-
-	public void setMonthlySalry(int monthlySalry) {
-		this.monthlySalry = monthlySalry;
+	public void setUserAnnualSalry(int userAnnualSalry) {
+		this.userAnnualSalry = userAnnualSalry;
 	}
-
-	public int getId() {
-		return id;
+	public String getUserAddress() {
+		return userAddress;
 	}
-
-	public void setId(int id) {
-		this.id = id;
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
 	}
-
-	public String getName() {
-		return name;
+	public String getUserCompany() {
+		return userCompany;
 	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setUserCompany(String userCompany) {
+		this.userCompany = userCompany;
 	}
-
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public int getUserMonthlySalry() {
+		return userMonthlySalry;
+	}
+	public void setUserMonthlySalry(int userMonthlySalry) {
+		this.userMonthlySalry = userMonthlySalry;
+	}
 }

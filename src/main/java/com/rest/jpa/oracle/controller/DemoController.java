@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rest.jpa.oracle.entity.Demo;
+import com.rest.jpa.oracle.dto.DemoDto;
 import com.rest.jpa.oracle.service.DemoService;
 
 @RestController
@@ -20,7 +20,7 @@ public class DemoController {
 	private DemoService demoService;
 
 	@GetMapping(value = "/userDetails/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public List<Demo> getDetailsById(@PathVariable("id") int id) {
+	public List<DemoDto> getDetailsById(@PathVariable("id") int id) {
 		return demoService.getUserDetailsById(id);
 	}
 

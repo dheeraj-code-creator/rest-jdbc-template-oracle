@@ -1,4 +1,4 @@
-package com.rest.jpa.oracle.dao;
+/*package com.rest.jpa.oracle.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,3 +20,4 @@ public class DemoMapper implements RowMapper<Demo>{
 	}
 
 }
+*/
